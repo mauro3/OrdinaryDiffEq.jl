@@ -277,7 +277,7 @@ function DiffEqBase.__init(
   kshortsize = 0
   reeval_fsal = false
   u_modified = false
-  eigen_est = 1/oneunit(tType) # rate/state = (state/time)/state = 1/t units
+  eigen_est = 1/one(tType) # rate/state = (state/time)/state = 1/t units, internalnorm drops units
   EEst = tTypeNoUnits(1)
   just_hit_tstop = false
   isout = false
