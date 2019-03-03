@@ -376,7 +376,7 @@ struct ROCK2 <: OrdinaryDiffEqAdaptiveAlgorithm end
 struct ROCK4 <: OrdinaryDiffEqAdaptiveAlgorithm end
 # RKC mehtods
 struct RKC <: OrdinaryDiffEqAdaptiveAlgorithm end
-struct IRKC{CS,AD,F,F2,FDT,K,T,T2,κType} <: OrdinaryDiffEqNewtonAdaptiveAlgorithm{CS,AD}
+struct IRKC{CS,AD,F,F2,FDT,K,T,T2} <: OrdinaryDiffEqNewtonAdaptiveAlgorithm{CS,AD}
   linsolve::F
   nlsolve::F2
   diff_type::FDT
